@@ -5,7 +5,7 @@ Quick hacky script to generate an Amazon AWS-accepted SSL chain ( used by ELBs a
 USAGE
 =====
 
-./aws-ssl-chain-finder.py cert-file chain-dr
+./aws-ssl-chain-finder.py cert-file chain-dir
 
 EXAMPLES
 ========
@@ -15,4 +15,4 @@ And cert.crt is the certificate you are trying to find the chain for:
 
     ./aws-ssl-chain-finder.py cert.crt chain > chain.crt
 
-chain.crt should then be accepted by Amazon AWS as a valid chain.
+chain.crt should then be accepted by Amazon AWS as a valid certificate chain.
