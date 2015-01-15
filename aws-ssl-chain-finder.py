@@ -82,6 +82,7 @@ else:
         if depth > previousdepth:
             validchain = chain
             tryid = 0
+            trycount = 0
             previousdepth = depth
         elif not success:
             chain = validchain
